@@ -10,7 +10,13 @@ interface PROPS {
 }
 
 const TaskItem: React.FC<PROPS> = (props) => {
-  return <div></div>;
+  return (
+    <div>
+      <ListItem>
+        <h2>{props.title}</h2>
+      </ListItem>
+    </div>
+  );
 };
 
 export default TaskItem;

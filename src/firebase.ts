@@ -4,8 +4,9 @@ import "firebase/firestore"
 import "firebase/auth"
 
 const firebaseApp = firebase.initializeApp({
-    apikey: process.env.REACT_APP_FIREBASE_APIKEY,
+    apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
     authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
+    databaseId: process.env.REACT_APP_FIREBASE_DATABASE_ID,
     projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
     storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
     messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,
